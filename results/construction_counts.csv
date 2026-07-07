@@ -1,0 +1,10 @@
+stage,count
+github_references,112277
+commit_or_pull_request_references,31900
+unique_extraction_targets,29358
+patch_records,62994
+unique_cves,11227
+unique_commits,18533
+unique_repositories,2917
+materialized_vulnerable_parent_files,46035
+evaluation_units_cve_file,59877

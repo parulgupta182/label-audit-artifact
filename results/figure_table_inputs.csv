@@ -1,0 +1,13 @@
+language,regime,value_percent
+C,whole_file,100.0
+C,hunk_context,39.3
+C,hunk_strict,33.5
+Python,whole_file,100.0
+Python,hunk_context,63.5
+Python,hunk_strict,57.3
+Java,whole_file,100.0
+Java,hunk_context,79.2
+Java,hunk_strict,73.2
+C++,whole_file,100.0
+C++,hunk_context,57.5
+C++,hunk_strict,53.3

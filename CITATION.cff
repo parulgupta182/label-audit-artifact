@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: "Anonymous Artifact for Provenance-Preserving Vulnerability-Label Auditing"
+message: "If you use this artifact, please cite the accompanying paper."
+type: software
+version: 1.0.0
+date-released: 2026-06-25

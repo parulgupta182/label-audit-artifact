@@ -1,0 +1,3 @@
+file_key,line,semgrep_cwe,rule_id
+anon1__db.py,12,CWE-89,python.sql-injection.example
+anon2__View.java,60,CWE-79,java.xss.example

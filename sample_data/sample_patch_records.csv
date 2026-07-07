@@ -1,0 +1,3 @@
+cve_id,cwe_id,repo,commit,parent_commit,file_path,language,hunk_start,hunk_end
+CVE-2026-0001,CWE-89,anonymous/repo1,abcdef,abcdee,src/db.py,python,10,18
+CVE-2026-0002,CWE-79,anonymous/repo2,123456,123455,src/View.java,java,30,35

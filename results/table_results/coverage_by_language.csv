@@ -1,0 +1,6 @@
+language,total_units,evidence_bearing,no_cwe_finding,evidence_coverage_percent
+Python,21779,4205,17574,19.3
+C,20039,1191,18848,5.9
+Java,11380,1317,10063,11.6
+C++,6679,310,6369,4.6
+Total,59877,7023,52854,11.7

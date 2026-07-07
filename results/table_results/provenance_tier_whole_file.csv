@@ -1,0 +1,3 @@
+tier,evidence_bearing,EP,HP,EP_plus_HP,agreement_percent,resolution_rule
+high,4828,957,367,1324,27.4,any_high_reference_implies_high
+medium,2195,367,271,638,29.1,any_high_reference_implies_high

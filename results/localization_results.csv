@@ -1,0 +1,13 @@
+language,regime,EP_plus_HP,retained_percent_of_whole_file
+C,whole_file,272,100.0
+C,hunk_context,107,39.3
+C,hunk_strict,91,33.5
+Python,whole_file,1104,100.0
+Python,hunk_context,701,63.5
+Python,hunk_strict,633,57.3
+Java,whole_file,466,100.0
+Java,hunk_context,369,79.2
+Java,hunk_strict,341,73.2
+C++,whole_file,120,100.0
+C++,hunk_context,69,57.5
+C++,hunk_strict,64,53.3

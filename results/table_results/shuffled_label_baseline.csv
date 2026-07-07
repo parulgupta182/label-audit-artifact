@@ -1,0 +1,5 @@
+language,observed_agreement_percent,shuffled_mean_percent,shuffled_p5_percent,shuffled_p95_percent,n_permutations
+Python,26.3,8.3,7.7,9.0,200
+C,22.8,17.5,16.1,18.7,200
+Java,35.4,9.3,8.0,10.3,200
+C++,38.7,30.8,28.4,32.9,200

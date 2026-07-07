@@ -1,0 +1,5 @@
+language,semgrep_version,config,engine_flag,batch_mode,batch_size,total_findings,cwe_mapped_findings,notes
+C,1.166.0,p/default,--pro,wrapper chunks,200,6837,6837,Aggregated from reported run directory if local files are present.
+Python,1.166.0,p/default,--pro,direct batch folders,500,13509,13136,Aggregated from reported run directory if local files are present.
+Java,1.166.0,p/default,--pro,direct batch folders,500,4832,4832,Aggregated from reported run directory if local files are present.
+C++,1.166.0,p/default,--pro,direct batch folders,500,855,855,Aggregated from reported run directory if local files are present.
