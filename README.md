@@ -1,4 +1,4 @@
-# Anonymous Artifact: Provenance-Preserving Vulnerability-Label Auditing
+# Artifact: Provenance-Preserving Vulnerability-Label Auditing
 
 This artifact accompanies a paper on provenance-preserving vulnerability-label auditing for CVE-derived datasets.
 
