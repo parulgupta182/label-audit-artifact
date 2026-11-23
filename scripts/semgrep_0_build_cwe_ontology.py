@@ -69,9 +69,9 @@ def build(xml_path):
                "name": root.get("Name")}
     logging.info(f"CWE catalog: {catalog}")
     if catalog["version"] != "4.20":
-    raise ValueError(
-        f"Expected CWE 4.20, got {catalog['version']}"
-    )
+      raise ValueError(
+          f"Expected CWE 4.20, got {catalog['version']}"
+      )
 
     ds = Dataset()
     ds.add((CWE.Weakness, RDF.type, SCHEMA.Thing))
