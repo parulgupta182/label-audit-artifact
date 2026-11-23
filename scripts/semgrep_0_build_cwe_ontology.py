@@ -27,8 +27,8 @@ from rdflib.namespace import RDF, RDFS
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-CWE_ZIP_URL = "https://cwe.mitre.org/data/xml/cwec_latest.xml.zip"
-ZIP_PATH = Path("cwec_latest.xml.zip")
+CWE_ZIP_URL = "https://cwe.mitre.org/data/xml/cwec_v4.20.xml.zip"
+ZIP_PATH = Path("cwec_v4.20.xml.zip")
 LOCAL_XML = None                 # set to a path to skip download (offline/pinned)
 OUT_TRIG = Path("named_graphs_cwe.trig")
 PROVENANCE = Path("cwe_ontology_provenance.txt")
@@ -68,6 +68,10 @@ def build(xml_path):
     catalog = {"version": root.get("Version"), "date": root.get("Date"),
                "name": root.get("Name")}
     logging.info(f"CWE catalog: {catalog}")
+    if catalog["version"] != "4.20":
+    raise ValueError(
+        f"Expected CWE 4.20, got {catalog['version']}"
+    )
 
     ds = Dataset()
     ds.add((CWE.Weakness, RDF.type, SCHEMA.Thing))
