@@ -40,7 +40,7 @@ The repository provides analysis scripts, anonymized sample data, and aggregate 
 
 If you use this artifact in academic research, please cite:
 
-Gupta, P., Achter, L., Eder, J., & Hof, H.-J. (2026). *Provenance-Preserving Auditing of Vulnerability Labels in Large-Scale CVE-Derived Datasets*. 2nd International Workshop on Assessment with New Methodologies, Unified Benchmarks, and Environments, of Intrusion Detection and Response Systems (ANUBIS 2026), co-located with ESORICS 2026.
+Gupta, P., Achter, L., Eder, J., & Hof, H.-J. (2026). Provenance-Preserving Auditing of Vulnerability Labels in Large-Scale CVE-Derived Datasets. 2nd International Workshop on Assessment with New Methodologies, Unified Benchmarks, and Environments, of Intrusion Detection and Response Systems (ANUBIS 2026), co-located with ESORICS 2026.
 
 The citation will be updated with the publisher's official bibliographic metadata when confirmed.
 
