@@ -1,6 +1,32 @@
+
 cff-version: 1.2.0
-title: "Anonymous Artifact for Provenance-Preserving Vulnerability-Label Auditing"
-message: "If you use this artifact, please cite the accompanying paper."
+message: "If you use this research artifact, please cite the associated ANUBIS 2026 paper."
+title: "Provenance-Preserving Auditing of Vulnerability Labels in Large-Scale CVE-Derived Datasets"
 type: software
-version: 1.0.0
-date-released: 2026-06-25
+authors:
+  - family-names: Gupta
+    given-names: Parul
+  - family-names: Achter
+    given-names: Lea
+  - family-names: Eder
+    given-names: Julienne
+  - family-names: Hof
+    given-names: Hans-Joachim
+repository-code: "https://github.com/parulgupta182/label-audit-artifact"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Provenance-Preserving Auditing of Vulnerability Labels in Large-Scale CVE-Derived Datasets"
+  authors:
+    - family-names: Gupta
+      given-names: Parul
+    - family-names: Achter
+      given-names: Lea
+    - family-names: Eder
+      given-names: Julienne
+    - family-names: Hof
+      given-names: Hans-Joachim
+  year: 2026
+  conference:
+    name: "2nd International Workshop on Assessment with New Methodologies, Unified Benchmarks, and Environments, of Intrusion Detection and Response Systems (ANUBIS 2026)"
+  url: "https://superviz.inria.fr/assets/pdf/anubis26/ESORICS_2026_paper_1192.pdf"
