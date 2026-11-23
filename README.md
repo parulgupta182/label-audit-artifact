@@ -2,7 +2,7 @@
 
 **Research Artifact — ANUBIS 2026 (ESORICS 2026 Workshops)**
 
-**Authors:** Parul Gupta, Lea Achter, Julienne Eder, Thomas Hutzelmann, and Hans-Joachim Hof
+**Authors:** Parul Gupta, Lea Achter, Julienne Eder, and Hans-Joachim Hof
 
 **Affiliation:** Technische Hochschule Ingolstadt (THI), Germany
 
@@ -30,9 +30,60 @@ The artifact supports provenance-preserving vulnerability dataset construction a
 - Evidence localization under whole-file, hunk-context, and hunk-strict evaluation regimes.
 - Analysis of label agreement, evidence coverage, and provenance confidence.
 
-The repository provides analysis scripts, anonymized sample data, and aggregate experimental results.
+The repository provides analysis scripts, sample data, and aggregate experimental results.
 
 **Reproducibility scope:** The full materialized source-code corpus is not distributed. Reproducing the complete analysis requires reconstructing the dataset from its original sources and executing the static-analysis pipeline. Some stages require external services, API credentials, and Semgrep Pro access.
+
+---
+
+## Reproducing the Evaluation Results
+
+This repository provides derived metadata sufficient to independently reconstruct the CWE-consistency verdicts reported in the ANUBIS 2026 study.
+
+The release includes:
+
+- `data/consistency_units_merged.csv`: Reference verdicts for 59,877 CVE–file units.
+- `data/semgrep_findings.csv`: 26,033 parsed Semgrep findings.
+- `data/scan_manifest.csv`: Provenance metadata for 51,468 unique source files.
+- `data/hunk_ranges.csv`: 138,020 changed-hunk records.
+- `data/named_graphs_cwe.trig`: CWE 4.20 hierarchy.
+
+### Installation
+
+Requires Python 3.12 and the dependencies listed in `requirements.txt`.
+
+```bash
+python -m pip install pandas rdflib
+```
+
+### Independent Verdict Reconstruction
+
+From the repository root, execute:
+
+```bash
+python scripts/verify_verdicts.py
+```
+
+The script independently reconstructs exact CWE matches (EP), hierarchical matches (HP), mismatches, and no-finding verdicts for three evidence-localization regimes.
+
+It compares the reconstructed results against the stored reference verdicts for all 59,877 evaluation units.
+
+Expected validation result:
+
+```text
+Units checked: 59877
+Verdict comparisons: 179631
+Mismatched comparisons: 0
+OVERALL: PASS — all verdicts reproduced
+```
+
+### Reproducibility Scope
+
+This procedure reproduces the evaluation verdicts from released derived scanner evidence. It does not rerun Semgrep or reconstruct the complete vulnerable source-code corpus.
+
+Full scanner re-execution requires retrieving the original source files and access to the corresponding Semgrep Pro configuration.
+
+A documented normalization of one malformed scanner file identifier is described in `DATA_CORRECTIONS.md`.
 
 ---
 
